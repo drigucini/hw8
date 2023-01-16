@@ -54,7 +54,7 @@ public class Main {
         firstArray[0] = 1;
         firstArray[1] = 2;
         firstArray[2] = 3;
-        for (int i = firstArray.length; i > 0; i--) {
+        for (int i = firstArray.length; i >= 0; i--) {
             if(i == 1){
                 System.out.print(firstArray[i-1]);
                 break;
@@ -66,8 +66,9 @@ public class Main {
 
         double[] secondArray = {1.57, 7.654, 9.986};
         for (int i = secondArray.length; i > 0; i--) {
+
             if(i == 1){
-                System.out.print(firstArray[i-1]);
+                System.out.print(secondArray[0]);
                 break;
             }
             System.out.print(secondArray[i-1] + ", ");
@@ -81,7 +82,7 @@ public class Main {
         thirdArray[3] = 'f';
         for (int i = thirdArray.length; i > 0; i--) {
             if(i == 1){
-                System.out.print(firstArray[i-1]);
+                System.out.print(thirdArray[i-1]);
                 break;
             }
             System.out.print(thirdArray[i-1] + ", ");
